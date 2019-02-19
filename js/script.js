@@ -31,3 +31,4 @@ jQuery(document).ready(function ($) {
               console.log('resized');
             } //end doneResizing
         });
+var navigation = $('#nav-main').okayNav();
