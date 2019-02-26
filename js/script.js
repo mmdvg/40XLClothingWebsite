@@ -31,4 +31,12 @@ jQuery(document).ready(function ($) {
               console.log('resized');
             } //end doneResizing
         });
-var navigation = $('#nav-main').okayNav();
+$(document).ready(function () {
+  var $nav = $('#navigation'),
+      posTop = $nav.position().top;
+  $(window).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > posTop) { $nav.addClass('fixed'); }
+    else { $nav.removeClass('fixed'); }
+  });
+});
