@@ -597,5 +597,11 @@ p{
 body{
   display:flex;
 }
+           img{
+  max-width:40%;
+  min-width:40%;
+  height: auto;
+  width: auto\7; /* IE8 */
+}
 
 
